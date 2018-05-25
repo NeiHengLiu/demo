@@ -1,0 +1,634 @@
+/** 重庆轨道交通 **/
+body{
+    min-width: 1200px;
+}
+
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1921px;
+    margin: 0 auto;
+}
+
+.page{
+    position: relative;
+}
+
+.bg_img img{
+    width: 100%;
+}
+
+.page .page_center{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.page .train_1{
+    width: 100%;
+    height: 15.7%;
+    /* border-top: 1px solid red; */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.page .light_rail_1{
+    width: 25.455491%;
+    position: absolute;
+    right: -30%;
+    top: 0px;
+    -webkit-transform: translate(100%, -100%);
+    transform: translate(100%, -100%);
+}
+
+.page .scenery_list{
+    /* border: 1px solid red; */
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 29%;
+}
+
+.page .scenery_list{
+    padding: 0 8%;
+}
+
+.page .scenery_list .scenery_item{
+    width: 20%;
+    float: left;
+}
+
+.page .scenery_list .scenery_center,
+.page .scenery_list .scenery_center .scenery_img{
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.page .scenery_list .scenery_center{
+    opacity: 0.2;
+}
+
+.page .scenery_list .scenery_center.left_rotate{
+    transform: rotate(-35deg);
+}
+
+.page .scenery_list .scenery_center.right_rotate{
+    transform: rotate(35deg);
+}
+
+.page .scenery_list .scenery_center.active{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.page .scenery_list .scenery_center.active.active2 .scenery_img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.page .scenery_list .scenery_img_line{
+    overflow: hidden;
+}
+
+.page .scenery_list .scenery_center{
+    width: 68%;
+    padding: 6px 6px;
+    background-color: #fff;
+    box-shadow: 0px 2px 7px #c9c9c9;
+}
+
+.page .scenery_list .scenery_img{
+    width: 100%;
+}
+
+.query_train_line{
+    width: 456px;
+    position: absolute;
+    top: 12.578616%;
+    right: 4.164498%;
+    /* border: 1px solid red; */
+}
+
+.query_train_line .select_style{
+    width: 150Px;
+    height: 35px;
+    border: 1px solid #fff;
+    background-image: url("../images/icon/bottom_jt.png");
+    background-repeat: no-repeat;
+    background-position: 130px center;
+    background-size: 9px auto;
+    position: relative;
+}
+
+.page_1 .query_btn{
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    font-weight: bolder;
+    background-color: #f3b82e;
+}
+
+.page_1 .select3-single-select{
+    height: 35px;
+    padding: 0px;
+    color: #fff;
+}
+
+.page_1 .select3-single-select:hover{
+    background-color: transparent;
+}
+
+.page_1 .select3-placeholder{
+    color: #fff;
+}
+
+.page_1 .select3-single-selected-item{
+    color: #fff;
+    font-size: 12px;
+}
+
+.dropdown {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.dropdown p {
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-bottom: 0px;
+    cursor: pointer
+}
+
+.dropdown ul {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+.dropdown ul li {
+    height: 35px;
+    line-height: 35px;
+    text-indent: 10px
+}
+
+.dropdown ul li a {
+    display: block;
+    height: 35px;
+    color: #687278;
+    text-decoration: none
+}
+
+.dropdown ul li a:hover {
+    background: #eee;
+    color: #687278
+}
+
+/* 第二页 */
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav_left_list{
+    width: 11.920875%;
+    /* height: 468px; */
+    height: 40.240757%;
+    position: absolute;
+    left: 5.205622%;
+    top: 11.349957%;
+    z-index: 2;
+    /* border: 1px solid red; */
+}
+
+.nav_left_list .nav_left_item{
+    width: 100%;
+    /* height: 4.471195%; */
+    height: 11.111111%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 3.205128%;
+    cursor: pointer;
+}
+
+.nav_left_list .nav_left_item.nav_left_item_1{
+    background-image: url("../images/icon/1.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_2{
+    background-image: url("../images/icon/2.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_3{
+    background-image: url("../images/icon/3.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_4{
+    background-image: url("../images/icon/4.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_5{
+    background-image: url("../images/icon/5.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_6{
+    background-image: url("../images/icon/6.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_7{
+    background-image: url("../images/icon/7.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_8{
+    background-image: url("../images/icon/8.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_9{
+    background-image: url("../images/icon/9.png");
+}
+
+
+.nav_left_list .nav_left_item.nav_left_item_1:hover{
+    background-image: url("../images/icon/1_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_2:hover{
+    background-image: url("../images/icon/2_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_3:hover{
+    background-image: url("../images/icon/3_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_4:hover{
+    background-image: url("../images/icon/4_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_5:hover{
+    background-image: url("../images/icon/5_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_6:hover{
+    background-image: url("../images/icon/6_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_7:hover{
+    background-image: url("../images/icon/7_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_8:hover{
+    background-image: url("../images/icon/8_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_9:hover{
+    background-image: url("../images/icon/9_active.png");
+}
+
+
+.nav_left_list .nav_left_item.nav_left_item_1.active{
+    background-image: url("../images/icon/1_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_2.active{
+    background-image: url("../images/icon/2_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_3.active{
+    background-image: url("../images/icon/3_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_4.active{
+    background-image: url("../images/icon/4_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_5.active{
+    background-image: url("../images/icon/5_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_6.active{
+    background-image: url("../images/icon/6_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_7.active{
+    background-image: url("../images/icon/7_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_8.active{
+    background-image: url("../images/icon/8_active.png");
+}
+
+.nav_left_list .nav_left_item.nav_left_item_9.active{
+    background-image: url("../images/icon/9_active.png");
+}
+
+.query_train_line_2{
+    /* width: 230px; */
+    width: 11.920875%;
+    /* height: 240px; */
+    height: 20.636285%;
+    position: absolute;
+    left: 5.205622%;
+    top: 65.77816%;
+    /* border: 1px solid red; */
+}
+
+.query_train_line_2 .select_style{
+    width: 100%;
+    /* height: 35px; */
+    height: 14.583333%;
+    border: 1px solid #000;
+    margin-bottom: 4.166667%;
+    background-image: url("../images/icon/black_arrow_bottom.png");
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    background-size: 9px auto;
+    position: relative;
+}
+
+.query_train_line_2 .select3-single-select{
+    min-height: 100%;
+    height: 100%;
+    padding: 0px;
+    line-height: 14.583333%;
+}
+
+.query_train_line_2 .select3-single-result-container{
+    height: 100%;
+    line-height: 14.583333%;
+    top: 0px;
+}
+
+.query_train_line_2 .select3-placeholder,
+.query_train_line_2 .select3-single-selected-item{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.query_train_line_2 .select3-single-selected-item{
+    font-size: 12px;
+}
+
+.query_train_line_2 .select3-single-select:hover{
+    background-color: transparent;
+}
+
+.query_train_line_2 .query_results{
+    width: 100%;
+    height: 33.333333%;
+}
+
+.query_train_line_2 .query_info{
+    width: 76.086957%;
+    height: 100%;
+    padding-right: 2%;
+    position: relative;
+}
+
+.query_train_line_2 .query_info_item{
+    height: 30.33%;
+    margin-bottom: 3%;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.query_train_line_2 .query_info_item p{
+    padding-left: 2%;
+    height: 14px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.query_train_line_2 .query_btn_line{
+    width: 23.913043%;
+    height: 104%;
+    position: relative;
+    background-image: url("../images/icon/query_btn.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.train_2{
+    width: 100%;
+    /* height: 17.024936%; */
+    height: 8.426483%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* border: 1px solid red; */
+}
+
+.train_2 .light_rail_2{
+    display: block;
+    width: 25.663717%;
+    /* position: absolute;
+    right: 0px;
+    bottom: 0px; */
+    -webkit-transform: translate(400%, 135%) translate3d(0,0,0);
+    -moz-transform: translate(400%, 135%) translate3d(0,0,0);
+    -ms-transform: translate(400%, 135%) translate3d(0,0,0);
+    transform: translate(400%, 135%) translate3d(0,0,0);
+    -webkit-animation: light_rail_2 5s linear infinite;
+    -moz-animation: light_rail_2 5s linear infinite;
+    -ms-animation: light_rail_2 5s linear infinite;
+    animation: light_rail_2 5s linear infinite;
+}
+
+/* .banner{
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transform: translateX(-50%);
+} */
+
+.certify{
+    /* width: 100%; */
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.certify .swiper-slide{
+    /* width: 314px; */
+    /* height: 389px; */
+    width: 40%;
+    height: auto;
+}
+
+.certify .swiper-slide img{
+    width: 100%;
+}
+
+.certify .swiper-container{
+    padding-bottom: 10px;
+}
+
+.certify .swiper-pagination{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    bottom: 4px;
+}
+
+.certify .swiper-banner-prev,
+.certify .swiper-banner-next{
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.certify .swiper-banner-prev{
+    background-image: url("../images/icon/black_arrow_left_big.png");
+}
+
+.certify .swiper-banner-next{
+    background-image: url("../images/icon/black_arrow_right_big.png");
+}
+
+.circuit_diagram{
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 0px;
+}
+
+.circuit_diagram .circuit_diagram_img{
+    width: 48.776679%;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+}
+
+.nav_left_info{
+    /* display: none; */
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+.timer_img_line{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+.timer_img_line .timer_img{
+    display: block;
+    width: 90%;
+}
+
+.nav_3d_line{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+.nav_3d_line .nav_3d_img{
+    display: block;
+    width: 90%;
+}
+
+.line_img_line{
+    width: 63.76887%;
+    height: 74.032674%;
+    background-image: url("../images/wireframe.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.line_img_line .line_img_1,
+.line_img_line .line_img_2{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.line_img_line .line_img_1.active{
+    opacity: 0.2;
+}
+
+.line_img_line .line_img_2{
+    top: -0.8%;
+    z-index: 2;
+}
+
+/** 第二页小火车动画 **/
+@-webkit-keyframes light_rail_2{
+    from{
+        -webkit-transform: translate(400%, 135%);
+    }
+    to{
+        -webkit-transform: translate(-100%, 135%);
+    }
+}
+
+@-moz-keyframes light_rail_2{
+    from{
+        -moz-transform: translate(400%, 135%);
+    }
+    to{
+        -moz-transform: translate(-100%, 135%);
+    }
+}
+
+@-ms-keyframes light_rail_2{
+    from{
+        -ms-transform: translate(400%, 135%);
+    }
+    to{
+        -ms-transform: translate(-100%, 135%);
+    }
+}
+
+@keyframes  light_rail_2{
+    from{
+        transform: translate(400%, 135%);
+    }
+    to{
+        transform: translate(-100%, 135%);
+    }
+}
